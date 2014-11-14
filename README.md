@@ -2,10 +2,13 @@ This is an attempt to integrate Grails and spring-data-neo4j.  Specifically, it 
 https://spring.io/guides/gs/accessing-data-neo4j/
 
 The issue is that the @Autowire statements in GrailsN4jGraph.java don't appear to be being picked up.  This causes the following failure:
+
 ------------------------------
+
 ERROR context.GrailsContextLoaderListener  - Error initializing the application: Error creating bean with name 'neo4jMappingContext' defined in class path resource [grailsSdn4j/GrailsN4jGraph.class]:
 ...
 nested exception is java.lang.IllegalArgumentException: requirement failed: Can't work with a null graph database
+
 ------------------------------
 
 (comments by Jigish - http://github.com/jigishpa)
