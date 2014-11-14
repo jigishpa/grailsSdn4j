@@ -17,11 +17,11 @@ have to do with the order in which beans are created in this situation and proxy
 
 I made the following changes to make this work:
 
-#1 I went back to neo4j xml configuration and added a grails-app/conf/resources.xml with necessary neo4j configuration.
+1. I went back to neo4j xml configuration and added a grails-app/conf/resources.xml with necessary neo4j configuration.
 
-#2 I also took out this out from Config.groovy --> grails.spring.bean.packages = ['grailsSdn4j']
+2. I also took out this out from Config.groovy --> grails.spring.bean.packages = ['grailsSdn4j']
 (in fact, I made further progress by adding other neo4j and spring-data-neo4j packages to this list like so:
 //grails.spring.bean.packages = ['grailsSdn4j', 'org.neo4j', 'org.springframework.data.neo4j']
 But there were still other exceptions being caused.)
 
-#3 Removed the @EnableNeo4jRepositories annotation from src/java/grailsSdn4j/GrailsN4jGraph.java
+3. Removed the @EnableNeo4jRepositories annotation from src/java/grailsSdn4j/GrailsN4jGraph.java
