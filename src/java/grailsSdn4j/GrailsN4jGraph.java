@@ -4,18 +4,13 @@ package grailsSdn4j;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
-import org.neo4j.kernel.impl.util.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.neo4j.config.EnableNeo4jRepositories;
 import org.springframework.data.neo4j.config.Neo4jConfiguration;
 import org.springframework.data.neo4j.core.GraphDatabase;
 
-import java.io.File;
-
 @Configuration
-@EnableNeo4jRepositories(basePackages = "grailsSdn4j")
 public class GrailsN4jGraph extends Neo4jConfiguration {
 
     public GrailsN4jGraph() {

@@ -69,7 +69,7 @@ grails.json.legacy.builder = false
 // enabled native2ascii conversion of i18n properties files
 grails.enable.native2ascii = true
 // packages to include in Spring bean scanning
-grails.spring.bean.packages = ['grailsSdn4j']
+// grails.spring.bean.packages = ['grailsSdn4j']
 // whether to disable processing of multi part requests
 grails.web.disable.multipart=false
 
